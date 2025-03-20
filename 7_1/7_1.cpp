@@ -2,6 +2,10 @@
 
 #define MODE 1
 
+#ifndef MODE
+#error
+#endif
+
 #if MODE == 1
 int add(int num1, int num2)
 {
